@@ -11,8 +11,9 @@ library(shinythemes)
 options(shiny.usecairo=T)
 
 
-data_import <- read_csv("https://data.nashville.gov/resource/emcy-s884.csv")
-#data_import <- read_csv("Metro_Arts_Grant_History.csv")
+#data_import <- read_csv("https://data.nashville.gov/resource/emcy-s884.csv")
+data_import <- read_csv("metro_arts_grants.csv")
+#data_import <- read_csv("https://raw.githubusercontent.com/hymelam/interactive-metro_art_grant/master/metro_arts_grants.csv")
 
 dat <- data_import %>% 
   select(-totals) %>% 
